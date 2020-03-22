@@ -139,6 +139,7 @@
         
         ---
         它的假设函数是这样的：
+
         <img style="display:block; margin:0 auto;" src = "https://latex.codecogs.com/svg.latex?%24%24h_%7B%5Ctheta%7D%28x%29%3D%5Ctheta%5E%7BT%7D%20X%3D%5Ctheta_%7B0%7D&plus;%5Ctheta_%7B1%7D%20x_%7B1%7D&plus;%5Ctheta_%7B2%7D%20x_%7B2%7D&plus;%5Cldots&plus;%5Ctheta_%7B31%7D%20x_%7B31%7D%24%24"  />
         
         它的带有正则化的代价函数是这样的：
@@ -149,7 +150,7 @@
         
 ## 1️⃣.3️⃣ 预测结果评价指标⚒️
 ---
-&emsp;&emsp;赛题的预测评估指标为$MAE(Mean Absolute Error)$
+&emsp;&emsp;赛题的预测评估指标为MAE(Mean Absolute Error)
 
 
 <img style="display:block; margin:0 auto;" src = "https://latex.codecogs.com/svg.latex?%24%24M%20A%20E%3D%5Cfrac%7B%5Csum%5Climits_%7Bi%3D1%7D%5E%7Bn%7D%5Cleft%7Cy_%7Bi%7D-%5Chat%7By%7D_%7Bi%7D%5Cright%7C%7D%7Bn%7D%24%24"  />
