@@ -6,6 +6,7 @@
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/ycraaron/LuotuoCoin.svg)](https://github.com/ycraaron/LuotuoCoin/pulls)
 ![forks](https://img.shields.io/github/forks/ExcaliburEX/Tianchi-Story)
 ![stars](	https://img.shields.io/github/stars/ExcaliburEX/Tianchi-Story)
+![repo size](https://img.shields.io/github/repo-size/ExcaliburEX/Tianchi-Story)
 [![HitCount](http://hits.dwyl.com/ExcaliburEX/Tianchi-Story.svg)](http://hits.dwyl.com/ExcaliburEX/Tianchi-Story)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 ![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fimg.shields.io%2Ftwitter%2Furl%3Fstyle%3Dsocial%26url%3Dhttps%253A%252F%252Ftwitter.com%252FExcaliburjp)
