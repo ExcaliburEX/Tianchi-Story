@@ -11,6 +11,7 @@
 
 ---
 
+
 # 全文大导航
 
 - [二手车成交价格预测](https://github.com/ExcaliburEX/Tianchi-Story#二手车成交价格预测)
@@ -138,20 +139,21 @@
         
         ---
         它的假设函数是这样的：
-        
-      <a href="https://www.codecogs.com/eqnedit.php?latex=h_{\theta}(x)=\theta^{T}&space;X=\theta_{0}&plus;\theta_{1}&space;x_{1}&plus;\theta_{2}&space;x_{2}&plus;\ldots&plus;\theta_{31}&space;x_{31}" target="_blank" align="center" style="display: block; text-align: center;"><img src="https://latex.codecogs.com/gif.latex?h_{\theta}(x)=\theta^{T}&space;X=\theta_{0}&plus;\theta_{1}&space;x_{1}&plus;\theta_{2}&space;x_{2}&plus;\ldots&plus;\theta_{31}&space;x_{31}" title="h_{\theta}(x)=\theta^{T} X=\theta_{0}+\theta_{1} x_{1}+\theta_{2} x_{2}+\ldots+\theta_{31} x_{31}" align="center"  /></a>
+        <img style="display:block; margin:0 auto;" src = "https://latex.codecogs.com/svg.latex?%24%24h_%7B%5Ctheta%7D%28x%29%3D%5Ctheta%5E%7BT%7D%20X%3D%5Ctheta_%7B0%7D&plus;%5Ctheta_%7B1%7D%20x_%7B1%7D&plus;%5Ctheta_%7B2%7D%20x_%7B2%7D&plus;%5Cldots&plus;%5Ctheta_%7B31%7D%20x_%7B31%7D%24%24"  />
         
         它的带有正则化的代价函数是这样的：
 
-        <a href="https://www.codecogs.com/eqnedit.php?latex=$$J(\theta)=\frac{1}{62}&space;\sum_{i=1}^{31}\left[\left(\left(h_{\theta}\left(x^{(i)}\right)-y^{(i)}\right)^{2}&plus;\lambda&space;\sum_{j=1}^{31}&space;\theta_{j}^{2}\right)\right]$$" target="_blank" style="display: block; text-align: center;"><img src="https://latex.codecogs.com/gif.latex?$$J(\theta)=\frac{1}{62}&space;\sum_{i=1}^{31}\left[\left(\left(h_{\theta}\left(x^{(i)}\right)-y^{(i)}\right)^{2}&plus;\lambda&space;\sum_{j=1}^{31}&space;\theta_{j}^{2}\right)\right]$$" title="$$J(\theta)=\frac{1}{62} \sum_{i=1}^{31}\left[\left(\left(h_{\theta}\left(x^{(i)}\right)-y^{(i)}\right)^{2}+\lambda \sum_{j=1}^{31} \theta_{j}^{2}\right)\right]$$" /></a>
-        
+        <img style="display:block; margin:0 auto;" src = "https://latex.codecogs.com/svg.latex?%24%24J%28%5Ctheta%29%3D%5Cfrac%7B1%7D%7B62%7D%20%5Csum_%7Bi%3D1%7D%5E%7B31%7D%5Cleft%5B%5Cleft%28%5Cleft%28h_%7B%5Ctheta%7D%5Cleft%28x%5E%7B%28i%29%7D%5Cright%29-y%5E%7B%28i%29%7D%5Cright%29%5E%7B2%7D&plus;%5Clambda%20%5Csum_%7Bj%3D1%7D%5E%7B31%7D%20%5Ctheta_%7Bj%7D%5E%7B2%7D%5Cright%29%5Cright%5D%24%24"  />
+          
         ---
         
 ## 1️⃣.3️⃣ 预测结果评价指标⚒️
 ---
 &emsp;&emsp;赛题的预测评估指标为$MAE(Mean Absolute Error)$
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=MAE=\frac{\sum\limits_{i=1}^{n}\left|y_{i}-\hat{y}_{i}\right|}{n}" target="_blank" align="center" style="display: block; text-align: center;"><img src="https://latex.codecogs.com/gif.latex?MAE=\frac{\sum\limits_{i=1}^{n}\left|y_{i}-\hat{y}_{i}\right|}{n}" title="MAE=\frac{\sum\limits_{i=1}^{n}\left|y_{i}-\hat{y}_{i}\right|}{n}" /></a>
+
+<img style="display:block; margin:0 auto;" src = "https://latex.codecogs.com/svg.latex?%24%24M%20A%20E%3D%5Cfrac%7B%5Csum%5Climits_%7Bi%3D1%7D%5E%7Bn%7D%5Cleft%7Cy_%7Bi%7D-%5Chat%7By%7D_%7Bi%7D%5Cright%7C%7D%7Bn%7D%24%24"  />
+
 ---
 
 &emsp;&emsp;可以看出，指标就一个，没有很多维度的评价框架，不那么劝退。🤔
@@ -1441,7 +1443,8 @@ Train_data['price'].value_counts()
     - 数值的绝对值越大，表明数据分布越不对称，偏斜程度大。
     - 计算公式
 
-  <a href="https://www.codecogs.com/eqnedit.php?latex=$$\gamma_{1}=\mathrm{E}\left[\left(\frac{X-\mu}{\sigma}\right)^{3}\right]=\frac{\mu_{3}}{\sigma^{3}}=\frac{\mathrm{E}\left[(X-\mu)^{3}\right]}{\left(\mathrm{E}\left[(X-\mu)^{2}\right]\right)^{3&space;/&space;2}}=\frac{\kappa_{3}}{\kappa_{2}^{3&space;/&space;2}}$$" target="_blank" align="center" style="display: block; text-align: center;"><img src="https://latex.codecogs.com/gif.latex?$$\gamma_{1}=\mathrm{E}\left[\left(\frac{X-\mu}{\sigma}\right)^{3}\right]=\frac{\mu_{3}}{\sigma^{3}}=\frac{\mathrm{E}\left[(X-\mu)^{3}\right]}{\left(\mathrm{E}\left[(X-\mu)^{2}\right]\right)^{3&space;/&space;2}}=\frac{\kappa_{3}}{\kappa_{2}^{3&space;/&space;2}}$$" title="$$\gamma_{1}=\mathrm{E}\left[\left(\frac{X-\mu}{\sigma}\right)^{3}\right]=\frac{\mu_{3}}{\sigma^{3}}=\frac{\mathrm{E}\left[(X-\mu)^{3}\right]}{\left(\mathrm{E}\left[(X-\mu)^{2}\right]\right)^{3 / 2}}=\frac{\kappa_{3}}{\kappa_{2}^{3 / 2}}$$" /></a>
+    <img style="display:block; margin:0 auto;" src = "https://latex.codecogs.com/svg.latex?%24%24%5Cgamma_%7B1%7D%3D%5Cmathrm%7BE%7D%5Cleft%5B%5Cleft%28%5Cfrac%7BX-%5Cmu%7D%7B%5Csigma%7D%5Cright%29%5E%7B3%7D%5Cright%5D%3D%5Cfrac%7B%5Cmu_%7B3%7D%7D%7B%5Csigma%5E%7B3%7D%7D%3D%5Cfrac%7B%5Cmathrm%7BE%7D%5Cleft%5B%28X-%5Cmu%29%5E%7B3%7D%5Cright%5D%7D%7B%5Cleft%28%5Cmathrm%7BE%7D%5Cleft%5B%28X-%5Cmu%29%5E%7B2%7D%5Cright%5D%5Cright%29%5E%7B3%20/%202%7D%7D%3D%5Cfrac%7B%5Ckappa_%7B3%7D%7D%7B%5Ckappa_%7B2%7D%5E%7B3%20/%202%7D%7D%24%24"  />
+
     
 - **峰度（Kurtosis）**
 偏度是描述某变量所有取值分布形态陡缓程度的统计量，简单来说就是数据分布顶的尖锐程度。
@@ -1449,9 +1452,7 @@ Train_data['price'].value_counts()
     - Kurtosis > 0 比正态分布的高峰更加陡峭——尖顶峰。
     - urtosis<0 比正态分布的高峰来得平台——平顶峰。
     - 计算公式：
-
-    <a href="https://www.codecogs.com/eqnedit.php?latex=b_{1}=\frac{m_{3}}{s^{3}}=\frac{\frac{1}{n}&space;\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{3}}{\sqrt{\frac{1}{n-1}&space;\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}}^{3}}=\frac{\frac{1}{n}&space;\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{3}}{\left[\frac{1}{n-1}&space;\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}\right]^{3&space;/&space;2}}" target="_blank" align="center" style="display: block; text-align: center;"><img src="https://latex.codecogs.com/gif.latex?b_{1}=\frac{m_{3}}{s^{3}}=\frac{\frac{1}{n}&space;\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{3}}{\sqrt{\frac{1}{n-1}&space;\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}}^{3}}=\frac{\frac{1}{n}&space;\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{3}}{\left[\frac{1}{n-1}&space;\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}\right]^{3&space;/&space;2}}" title="b_{1}=\frac{m_{3}}{s^{3}}=\frac{\frac{1}{n} \sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{3}}{\sqrt{\frac{1}{n-1} \sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}}^{3}}=\frac{\frac{1}{n} \sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{3}}{\left[\frac{1}{n-1} \sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}\right]^{3 / 2}}" /></a>
-
+    <img style="display:block; margin:0 auto;" src = "https://latex.codecogs.com/svg.latex?%24%24b_%7B1%7D%3D%5Cfrac%7Bm_%7B3%7D%7D%7Bs%5E%7B3%7D%7D%3D%5Cfrac%7B%5Cfrac%7B1%7D%7Bn%7D%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%5Cleft%28x_%7Bi%7D-%5Cbar%7Bx%7D%5Cright%29%5E%7B3%7D%7D%7B%5Csqrt%7B%5Cfrac%7B1%7D%7Bn-1%7D%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%5Cleft%28x_%7Bi%7D-%5Cbar%7Bx%7D%5Cright%29%5E%7B2%7D%7D%7D%3D%5Cfrac%7B%5Cfrac%7B1%7D%7Bn%7D%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%5Cleft%28x_%7Bi%7D-%5Cbar%7Bx%7D%5Cright%29%5E%7B3%7D%7D%7B%5Cleft%5B%5Cfrac%7B1%7D%7Bn-1%7D%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%5Cleft%28x_%7Bi%7D-%5Cbar%7Bx%7D%5Cright%29%5E%7B2%7D%5Cright%5D%5E%7B3%20/%202%7D%7D%24%24"  />
 
 ```python
 sns.distplot(Train_data['price']);
