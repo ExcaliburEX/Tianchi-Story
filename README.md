@@ -5,16 +5,30 @@
 ![](https://img.shields.io/badge/coverage-100%25-orange)
 ![](https://img.shields.io/badge/chat-666%20online-yellowgreen)
 ![](https://img.shields.io/badge/stars-%E2%98%85%E2%98%85%E2%98%85%E2%98%85%E2%98%85-brightgreen)
-:[![Follow me on Twitter](https://img.shields.io/static/v1.svg?label=Follow%20%40Excaliburjp&message=🤙&color=red&logo=twitter&style=social)](https://twitter.com/Excaliburjp) 
-:![Copyright](https://img.shields.io/static/v1.svg?label=My%20cool%20project%20©️%20&message=%202020%20Name&labelColor=informational&color=033450) 
-:[![Add to Chrome](https://img.shields.io/static/v1.svg?label=Add%20to&message=Chrome%20🧘)](https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd) 
+[![Follow me on Twitter](https://img.shields.io/static/v1.svg?label=Follow%20%40Excaliburjp&message=🤙&color=red&logo=twitter&style=social)](https://twitter.com/Excaliburjp) 
+![Copyright](https://img.shields.io/static/v1.svg?label=My%20cool%20project%20©️%20&message=%202020%20Name&labelColor=informational&color=033450) 
+[![Add to Chrome](https://img.shields.io/static/v1.svg?label=Add%20to&message=Chrome%20🧘)](https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd) 
 
 ---
 
-# 导航
+# 全文大导航
 
 - [二手车成交价格预测](https://github.com/ExcaliburEX/Tianchi-Story#二手车成交价格预测)
-  - 赛题理解与数据分析EDA
+  - [1️⃣ 赛题理解✍️](https://github.com/ExcaliburEX/Tianchi-Story#1%EF%B8%8F%E2%83%A3-%E8%B5%9B%E9%A2%98%E7%90%86%E8%A7%A3%EF%B8%8F)
+    - [1️⃣.1️⃣ 赛题重述](https://github.com/ExcaliburEX/Tianchi-Story#1%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-%E8%B5%9B%E9%A2%98%E9%87%8D%E8%BF%B0)
+    - [1️⃣.2️⃣ 数据集概述](https://github.com/ExcaliburEX/Tianchi-Story#1%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-%E6%95%B0%E6%8D%AE%E9%9B%86%E6%A6%82%E8%BF%B0)
+    - [1️⃣.3️⃣ 预测结果评价指标⚒️](https://github.com/ExcaliburEX/Tianchi-Story#1%EF%B8%8F%E2%83%A33%EF%B8%8F%E2%83%A3-%E9%A2%84%E6%B5%8B%E7%BB%93%E6%9E%9C%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87%EF%B8%8F)
+  - [2️⃣ 数据分析EDA](https://github.com/ExcaliburEX/Tianchi-Story#2%EF%B8%8F%E2%83%A3-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90eda)
+    - [2️⃣.1️⃣ 数据总览](https://github.com/ExcaliburEX/Tianchi-Story#2%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-%E6%95%B0%E6%8D%AE%E6%80%BB%E8%A7%88)
+      - [2️⃣.1️⃣.1️⃣ 数据载入](https://github.com/ExcaliburEX/Tianchi-Story#2%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-%E5%90%84%E7%A7%8D%E8%AE%A1%E7%AE%97%E5%8C%85%E7%9A%84%E5%AF%BC%E5%85%A5)
+      - [2️⃣.1️⃣.2️⃣ 数据的基本形态](https://github.com/ExcaliburEX/Tianchi-Story#2%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-%E6%95%B0%E6%8D%AE%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%BD%A2%E6%80%81)
+    - [2️⃣.2️⃣ 数据的缺失情况📌](https://github.com/ExcaliburEX/Tianchi-Story#2%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-%E6%95%B0%E6%8D%AE%E7%9A%84%E7%BC%BA%E5%A4%B1%E6%83%85%E5%86%B5)
+    - [2️⃣.3️⃣ 数据的异常情况☢️](https://github.com/ExcaliburEX/Tianchi-Story#2%EF%B8%8F%E2%83%A33%EF%B8%8F%E2%83%A3-%E6%95%B0%E6%8D%AE%E7%9A%84%E5%BC%82%E5%B8%B8%E6%83%85%E5%86%B5%EF%B8%8F)
+    - [2️⃣.4️⃣ 待预测的真实值的分布情况📈](https://github.com/ExcaliburEX/Tianchi-Story#2%EF%B8%8F%E2%83%A34%EF%B8%8F%E2%83%A3-%E5%BE%85%E9%A2%84%E6%B5%8B%E7%9A%84%E7%9C%9F%E5%AE%9E%E5%80%BC%E7%9A%84%E5%88%86%E5%B8%83%E6%83%85%E5%86%B5)
+    - [2️⃣.5️⃣ 数据特征相关性的分析🎎](https://github.com/ExcaliburEX/Tianchi-Story#2%EF%B8%8F%E2%83%A35%EF%B8%8F%E2%83%A3-%E6%95%B0%E6%8D%AE%E7%89%B9%E5%BE%81%E7%9B%B8%E5%85%B3%E6%80%A7%E7%9A%84%E5%88%86%E6%9E%90)
+      - [2️⃣.5️⃣.1️⃣ `numric`特征的相关性分析](https://github.com/ExcaliburEX/Tianchi-Story#2%EF%B8%8F%E2%83%A35%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-numric%E7%89%B9%E5%BE%81%E7%9A%84%E7%9B%B8%E5%85%B3%E6%80%A7%E5%88%86%E6%9E%90)
+      - [2️⃣.5️⃣.2️⃣ `pandas_profiling`生成数据报告📕](https://github.com/ExcaliburEX/Tianchi-Story#2%EF%B8%8F%E2%83%A35%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-pandas_profiling%E7%94%9F%E6%88%90%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%91%8A)
+    - [3️⃣ 结语✏️](https://github.com/ExcaliburEX/Tianchi-Story#3%EF%B8%8F%E2%83%A3-%E7%BB%93%E8%AF%AD%EF%B8%8F)
   - 特征工程
   - 建模与调参
   - 模型结果融合
@@ -124,14 +138,12 @@
         
         ---
         它的假设函数是这样的：
-        $$
-        h_{\theta}(x)=\theta^{T} X=\theta_{0}+\theta_{1} x_{1}+\theta_{2} x_{2}+\ldots+\theta_{31} x_{31}
-        $$
+        
+      <a href="https://www.codecogs.com/eqnedit.php?latex=h_{\theta}(x)=\theta^{T}&space;X=\theta_{0}&plus;\theta_{1}&space;x_{1}&plus;\theta_{2}&space;x_{2}&plus;\ldots&plus;\theta_{31}&space;x_{31}" target="_blank" align="center" style="display: block; text-align: center;"><img src="https://latex.codecogs.com/gif.latex?h_{\theta}(x)=\theta^{T}&space;X=\theta_{0}&plus;\theta_{1}&space;x_{1}&plus;\theta_{2}&space;x_{2}&plus;\ldots&plus;\theta_{31}&space;x_{31}" title="h_{\theta}(x)=\theta^{T} X=\theta_{0}+\theta_{1} x_{1}+\theta_{2} x_{2}+\ldots+\theta_{31} x_{31}" align="center"  /></a>
         
         它的带有正则化的代价函数是这样的：
-        $$
-        J(\theta)=\frac{1}{62} \sum_{i=1}^{31}\left[\left(\left(h_{\theta}\left(x^{(i)}\right)-y^{(i)}\right)^{2}+\lambda \sum_{j=1}^{31} \theta_{j}^{2}\right)\right]
-        $$
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=$$J(\theta)=\frac{1}{62}&space;\sum_{i=1}^{31}\left[\left(\left(h_{\theta}\left(x^{(i)}\right)-y^{(i)}\right)^{2}&plus;\lambda&space;\sum_{j=1}^{31}&space;\theta_{j}^{2}\right)\right]$$" target="_blank" style="display: block; text-align: center;"><img src="https://latex.codecogs.com/gif.latex?$$J(\theta)=\frac{1}{62}&space;\sum_{i=1}^{31}\left[\left(\left(h_{\theta}\left(x^{(i)}\right)-y^{(i)}\right)^{2}&plus;\lambda&space;\sum_{j=1}^{31}&space;\theta_{j}^{2}\right)\right]$$" title="$$J(\theta)=\frac{1}{62} \sum_{i=1}^{31}\left[\left(\left(h_{\theta}\left(x^{(i)}\right)-y^{(i)}\right)^{2}+\lambda \sum_{j=1}^{31} \theta_{j}^{2}\right)\right]$$" /></a>
         
         ---
         
@@ -139,10 +151,7 @@
 ---
 &emsp;&emsp;赛题的预测评估指标为$MAE(Mean Absolute Error)$
 
-$$
-MAE=\frac{\sum\limits_{i=1}^{n}\left|y_{i}-\hat{y}_{i}\right|}{n}
-$$
-
+<a href="https://www.codecogs.com/eqnedit.php?latex=MAE=\frac{\sum\limits_{i=1}^{n}\left|y_{i}-\hat{y}_{i}\right|}{n}" target="_blank" align="center" style="display: block; text-align: center;"><img src="https://latex.codecogs.com/gif.latex?MAE=\frac{\sum\limits_{i=1}^{n}\left|y_{i}-\hat{y}_{i}\right|}{n}" title="MAE=\frac{\sum\limits_{i=1}^{n}\left|y_{i}-\hat{y}_{i}\right|}{n}" /></a>
 ---
 
 &emsp;&emsp;可以看出，指标就一个，没有很多维度的评价框架，不那么劝退。🤔
@@ -162,7 +171,7 @@ $$
 
 ## 2️⃣.1️⃣ 数据总览
 
-### 2️⃣.1️⃣.1️⃣ 各种计算包的导入
+### 2️⃣.1️⃣.1️⃣ 数据载入
 
 
 ```python
@@ -172,8 +181,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns # seabon是一个做可视化非常nice的包，它的别名sns是约定俗成的的东西，还有一段很有意思的故事
 import missingno as msno # 用来检测缺失值
 ```
-
-### 2️⃣.1️⃣.1️⃣ 数据载入
 
 
 ```python
@@ -1433,7 +1440,8 @@ Train_data['price'].value_counts()
     - Skewness < 0 ，负偏差数值较大，为负偏或左偏。长尾巴拖在左边，数据左端有较多的极端值。
     - 数值的绝对值越大，表明数据分布越不对称，偏斜程度大。
     - 计算公式
-    $$\gamma_{1}=\mathrm{E}\left[\left(\frac{X-\mu}{\sigma}\right)^{3}\right]=\frac{\mu_{3}}{\sigma^{3}}=\frac{\mathrm{E}\left[(X-\mu)^{3}\right]}{\left(\mathrm{E}\left[(X-\mu)^{2}\right]\right)^{3 / 2}}=\frac{\kappa_{3}}{\kappa_{2}^{3 / 2}}$$
+
+  <a href="https://www.codecogs.com/eqnedit.php?latex=$$\gamma_{1}=\mathrm{E}\left[\left(\frac{X-\mu}{\sigma}\right)^{3}\right]=\frac{\mu_{3}}{\sigma^{3}}=\frac{\mathrm{E}\left[(X-\mu)^{3}\right]}{\left(\mathrm{E}\left[(X-\mu)^{2}\right]\right)^{3&space;/&space;2}}=\frac{\kappa_{3}}{\kappa_{2}^{3&space;/&space;2}}$$" target="_blank" align="center" style="display: block; text-align: center;"><img src="https://latex.codecogs.com/gif.latex?$$\gamma_{1}=\mathrm{E}\left[\left(\frac{X-\mu}{\sigma}\right)^{3}\right]=\frac{\mu_{3}}{\sigma^{3}}=\frac{\mathrm{E}\left[(X-\mu)^{3}\right]}{\left(\mathrm{E}\left[(X-\mu)^{2}\right]\right)^{3&space;/&space;2}}=\frac{\kappa_{3}}{\kappa_{2}^{3&space;/&space;2}}$$" title="$$\gamma_{1}=\mathrm{E}\left[\left(\frac{X-\mu}{\sigma}\right)^{3}\right]=\frac{\mu_{3}}{\sigma^{3}}=\frac{\mathrm{E}\left[(X-\mu)^{3}\right]}{\left(\mathrm{E}\left[(X-\mu)^{2}\right]\right)^{3 / 2}}=\frac{\kappa_{3}}{\kappa_{2}^{3 / 2}}$$" /></a>
     
 - **峰度（Kurtosis）**
 偏度是描述某变量所有取值分布形态陡缓程度的统计量，简单来说就是数据分布顶的尖锐程度。
@@ -1441,7 +1449,8 @@ Train_data['price'].value_counts()
     - Kurtosis > 0 比正态分布的高峰更加陡峭——尖顶峰。
     - urtosis<0 比正态分布的高峰来得平台——平顶峰。
     - 计算公式：
-    $$b_{1}=\frac{m_{3}}{s^{3}}=\frac{\frac{1}{n} \sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{3}}{\sqrt{\frac{1}{n-1} \sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}}^{3}}=\frac{\frac{1}{n} \sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{3}}{\left[\frac{1}{n-1} \sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}\right]^{3 / 2}}$$
+
+    <a href="https://www.codecogs.com/eqnedit.php?latex=b_{1}=\frac{m_{3}}{s^{3}}=\frac{\frac{1}{n}&space;\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{3}}{\sqrt{\frac{1}{n-1}&space;\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}}^{3}}=\frac{\frac{1}{n}&space;\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{3}}{\left[\frac{1}{n-1}&space;\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}\right]^{3&space;/&space;2}}" target="_blank" align="center" style="display: block; text-align: center;"><img src="https://latex.codecogs.com/gif.latex?b_{1}=\frac{m_{3}}{s^{3}}=\frac{\frac{1}{n}&space;\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{3}}{\sqrt{\frac{1}{n-1}&space;\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}}^{3}}=\frac{\frac{1}{n}&space;\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{3}}{\left[\frac{1}{n-1}&space;\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}\right]^{3&space;/&space;2}}" title="b_{1}=\frac{m_{3}}{s^{3}}=\frac{\frac{1}{n} \sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{3}}{\sqrt{\frac{1}{n-1} \sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}}^{3}}=\frac{\frac{1}{n} \sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{3}}{\left[\frac{1}{n-1} \sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}\right]^{3 / 2}}" /></a>
 
 
 ```python
