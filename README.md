@@ -1,5 +1,14 @@
 # 天池的一些竞赛与想法👩‍💻
 ---
+<div align="center">
+
+[![GitHub Issues](https://img.shields.io/github/issues/ExcaliburEX/Tianchi-Story)](https://github.com/ExcaliburEX/Tianchi-Story/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/ycraaron/LuotuoCoin.svg)](https://github.com/ycraaron/LuotuoCoin/pulls)
+![forks](https://img.shields.io/github/forks/ExcaliburEX/Tianchi-Story)
+![stars](	https://img.shields.io/github/stars/ExcaliburEX/Tianchi-Story)
+[![HitCount](http://hits.dwyl.com/ExcaliburEX/Tianchi-Story.svg)](http://hits.dwyl.com/ExcaliburEX/Tianchi-Story)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fimg.shields.io%2Ftwitter%2Furl%3Fstyle%3Dsocial%26url%3Dhttps%253A%252F%252Ftwitter.com%252FExcaliburjp)
 ![](https://img.shields.io/badge/build-passing-green)
 ![](https://img.shields.io/badge/version-up--to--date-blue)
 ![](https://img.shields.io/badge/coverage-100%25-orange)
@@ -8,7 +17,7 @@
 [![Follow me on Twitter](https://img.shields.io/static/v1.svg?label=Follow%20%40Excaliburjp&message=🤙&color=red&logo=twitter&style=social)](https://twitter.com/Excaliburjp) 
 ![Copyright](https://img.shields.io/static/v1.svg?label=My%20cool%20project%20©️%20&message=%202020%20Name&labelColor=informational&color=033450) 
 [![Add to Chrome](https://img.shields.io/static/v1.svg?label=Add%20to&message=Chrome%20🧘)](https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd) 
-
+</div>
 ---
 
 
@@ -139,21 +148,24 @@
         
         ---
         它的假设函数是这样的：
-
+        <p align = "center">
         <img style="display:block; margin:0 auto;" src = "https://latex.codecogs.com/svg.latex?%24%24h_%7B%5Ctheta%7D%28x%29%3D%5Ctheta%5E%7BT%7D%20X%3D%5Ctheta_%7B0%7D&plus;%5Ctheta_%7B1%7D%20x_%7B1%7D&plus;%5Ctheta_%7B2%7D%20x_%7B2%7D&plus;%5Cldots&plus;%5Ctheta_%7B31%7D%20x_%7B31%7D%24%24"  />
+        </p>
         
         它的带有正则化的代价函数是这样的：
 
+        <p align = "center">
         <img style="display:block; margin:0 auto;" src = "https://latex.codecogs.com/svg.latex?%24%24J%28%5Ctheta%29%3D%5Cfrac%7B1%7D%7B62%7D%20%5Csum_%7Bi%3D1%7D%5E%7B31%7D%5Cleft%5B%5Cleft%28%5Cleft%28h_%7B%5Ctheta%7D%5Cleft%28x%5E%7B%28i%29%7D%5Cright%29-y%5E%7B%28i%29%7D%5Cright%29%5E%7B2%7D&plus;%5Clambda%20%5Csum_%7Bj%3D1%7D%5E%7B31%7D%20%5Ctheta_%7Bj%7D%5E%7B2%7D%5Cright%29%5Cright%5D%24%24"  />
-          
+        </p>
         ---
         
 ## 1️⃣.3️⃣ 预测结果评价指标⚒️
 ---
 &emsp;&emsp;赛题的预测评估指标为MAE(Mean Absolute Error)
 
-
+<p align = "center">
 <img style="display:block; margin:0 auto;" src = "https://latex.codecogs.com/svg.latex?%24%24M%20A%20E%3D%5Cfrac%7B%5Csum%5Climits_%7Bi%3D1%7D%5E%7Bn%7D%5Cleft%7Cy_%7Bi%7D-%5Chat%7By%7D_%7Bi%7D%5Cright%7C%7D%7Bn%7D%24%24"  />
+</p>
 
 ---
 
@@ -1443,8 +1455,9 @@ Train_data['price'].value_counts()
     - Skewness < 0 ，负偏差数值较大，为负偏或左偏。长尾巴拖在左边，数据左端有较多的极端值。
     - 数值的绝对值越大，表明数据分布越不对称，偏斜程度大。
     - 计算公式
-
+    <p align = "center">
     <img style="display:block; margin:0 auto;" src = "https://latex.codecogs.com/svg.latex?%24%24%5Cgamma_%7B1%7D%3D%5Cmathrm%7BE%7D%5Cleft%5B%5Cleft%28%5Cfrac%7BX-%5Cmu%7D%7B%5Csigma%7D%5Cright%29%5E%7B3%7D%5Cright%5D%3D%5Cfrac%7B%5Cmu_%7B3%7D%7D%7B%5Csigma%5E%7B3%7D%7D%3D%5Cfrac%7B%5Cmathrm%7BE%7D%5Cleft%5B%28X-%5Cmu%29%5E%7B3%7D%5Cright%5D%7D%7B%5Cleft%28%5Cmathrm%7BE%7D%5Cleft%5B%28X-%5Cmu%29%5E%7B2%7D%5Cright%5D%5Cright%29%5E%7B3%20/%202%7D%7D%3D%5Cfrac%7B%5Ckappa_%7B3%7D%7D%7B%5Ckappa_%7B2%7D%5E%7B3%20/%202%7D%7D%24%24"  />
+    </p>
 
     
 - **峰度（Kurtosis）**
@@ -1453,7 +1466,10 @@ Train_data['price'].value_counts()
     - Kurtosis > 0 比正态分布的高峰更加陡峭——尖顶峰。
     - urtosis<0 比正态分布的高峰来得平台——平顶峰。
     - 计算公式：
+    <p align = "center">
     <img style="display:block; margin:0 auto;" src = "https://latex.codecogs.com/svg.latex?%24%24b_%7B1%7D%3D%5Cfrac%7Bm_%7B3%7D%7D%7Bs%5E%7B3%7D%7D%3D%5Cfrac%7B%5Cfrac%7B1%7D%7Bn%7D%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%5Cleft%28x_%7Bi%7D-%5Cbar%7Bx%7D%5Cright%29%5E%7B3%7D%7D%7B%5Csqrt%7B%5Cfrac%7B1%7D%7Bn-1%7D%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%5Cleft%28x_%7Bi%7D-%5Cbar%7Bx%7D%5Cright%29%5E%7B2%7D%7D%7D%3D%5Cfrac%7B%5Cfrac%7B1%7D%7Bn%7D%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%5Cleft%28x_%7Bi%7D-%5Cbar%7Bx%7D%5Cright%29%5E%7B3%7D%7D%7B%5Cleft%5B%5Cfrac%7B1%7D%7Bn-1%7D%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%5Cleft%28x_%7Bi%7D-%5Cbar%7Bx%7D%5Cright%29%5E%7B2%7D%5Cright%5D%5E%7B3%20/%202%7D%7D%24%24"  />
+    </p>
+
 
 ```python
 sns.distplot(Train_data['price']);
