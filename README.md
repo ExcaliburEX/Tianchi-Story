@@ -41,7 +41,25 @@
       - [2️⃣.5️⃣.1️⃣ `numric`特征的相关性分析](https://github.com/ExcaliburEX/Tianchi-Story#2%EF%B8%8F%E2%83%A35%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-numric%E7%89%B9%E5%BE%81%E7%9A%84%E7%9B%B8%E5%85%B3%E6%80%A7%E5%88%86%E6%9E%90)
       - [2️⃣.5️⃣.2️⃣ `pandas_profiling`生成数据报告📕](https://github.com/ExcaliburEX/Tianchi-Story#2%EF%B8%8F%E2%83%A35%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-pandas_profiling%E7%94%9F%E6%88%90%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%91%8A)
     - [2️⃣.6️⃣ 结语✏️](https://github.com/ExcaliburEX/Tianchi-Story#3%EF%B8%8F%E2%83%A3-%E7%BB%93%E8%AF%AD%EF%B8%8F)
-  - 特征工程
+  - [特征工程🃏](https://github.com/ExcaliburEX/Tianchi-Story#%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B)
+    - [3️⃣.1️⃣&emsp; 前言](https://github.com/ExcaliburEX/Tianchi-Story#0%EF%B8%8F%E2%83%A3-%E5%89%8D%E8%A8%80)
+      - [3️⃣.1️⃣.1️⃣&emsp; 赛题重述](https://github.com/ExcaliburEX/Tianchi-Story#0%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-%E8%B5%9B%E9%A2%98%E9%87%8D%E8%BF%B0)
+      - [3️⃣.1️⃣.2️⃣&emsp; 数据集概述](https://github.com/ExcaliburEX/Tianchi-Story#0%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-%E6%95%B0%E6%8D%AE%E9%9B%86%E6%A6%82%E8%BF%B0)
+    - [3️⃣.2️⃣&emsp; 异常缺失值删除](https://github.com/ExcaliburEX/Tianchi-Story#1%EF%B8%8F%E2%83%A3-%E5%BC%82%E5%B8%B8%E7%BC%BA%E5%A4%B1%E5%80%BC%E5%88%A0%E9%99%A4)
+      - [3️⃣.2️⃣.1️⃣&emsp; 导入库与数据](https://github.com/ExcaliburEX/Tianchi-Story#1%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3--%E5%AF%BC%E5%85%A5%E5%BA%93%E4%B8%8E%E6%95%B0%E6%8D%AE)
+      - [3️⃣.2️⃣.2️⃣&emsp; 异常值删除](https://github.com/ExcaliburEX/Tianchi-Story#1%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3--%E5%BC%82%E5%B8%B8%E5%80%BC%E5%88%A0%E9%99%A4)
+    - [3️⃣.3️⃣&emsp; 树模型的特征构造](https://github.com/ExcaliburEX/Tianchi-Story#2%EF%B8%8F%E2%83%A3-%E6%A0%91%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%89%B9%E5%BE%81%E6%9E%84%E9%80%A0)
+      - [3️⃣.3️⃣.1️⃣&emsp; 时间特征构造](https://github.com/ExcaliburEX/Tianchi-Story#2%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-%E6%97%B6%E9%97%B4%E7%89%B9%E5%BE%81%E6%9E%84%E9%80%A0)
+      - [3️⃣.3️⃣.2️⃣&emsp; 城市信息特征提取](https://github.com/ExcaliburEX/Tianchi-Story#2%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-%E5%9F%8E%E5%B8%82%E4%BF%A1%E6%81%AF%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96)
+      - [3️⃣.3️⃣.3️⃣&emsp; 品牌特征提取](https://github.com/ExcaliburEX/Tianchi-Story#2%EF%B8%8F%E2%83%A33%EF%B8%8F%E2%83%A3-%E5%93%81%E7%89%8C%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96)
+    - [3️⃣.4️⃣&emsp; 树模型的数据分桶](https://github.com/ExcaliburEX/Tianchi-Story#3%EF%B8%8F%E2%83%A3-%E6%A0%91%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%95%B0%E6%8D%AE%E5%88%86%E6%A1%B6)
+    - [3️⃣.5️⃣&emsp; LR与NN模型的特征构造](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A3-lr%E4%B8%8Enn%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%89%B9%E5%BE%81%E6%9E%84%E9%80%A0)
+      - [3️⃣.5️⃣.1️⃣&emsp; log与归一化](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-log%E4%B8%8E%E5%BD%92%E4%B8%80%E5%8C%96)
+      - [3️⃣.5️⃣.2️⃣&emsp; OneEncoder编码](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-oneencoder%E7%BC%96%E7%A0%81)
+    - [3️⃣.6️⃣&emsp; 特征选择](https://github.com/ExcaliburEX/Tianchi-Story#5%EF%B8%8F%E2%83%A3-%E7%89%B9%E5%BE%81%E9%80%89%E6%8B%A9)
+      - [3️⃣.6️⃣.1️⃣&emsp; 过滤式(filter)](https://github.com/ExcaliburEX/Tianchi-Story#5%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-%E8%BF%87%E6%BB%A4%E5%BC%8Ffilter)
+      - [3️⃣.6️⃣.2️⃣&emsp; 包裹式(wrapper)](https://github.com/ExcaliburEX/Tianchi-Story#5%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-%E5%8C%85%E8%A3%B9%E5%BC%8Fwrapper)
+      - [3️⃣.6️⃣.3️⃣&emsp; 嵌入式(embedding)](https://github.com/ExcaliburEX/Tianchi-Story#5%EF%B8%8F%E2%83%A33%EF%B8%8F%E2%83%A3-%E5%B5%8C%E5%85%A5%E5%BC%8Fembedding)
   - 建模与调参
   - 模型结果融合
 
@@ -2048,7 +2066,7 @@ train.columns
 
 
 ### 1️⃣.2️⃣  异常值删除
-&emsp;&emsp;这里可以将箱型图中的超过上下限的那些值作为异常值删除。如下图所示，箱型图中间是一个箱体，也就是粉红色部分，箱体左边，中间，右边分别有一条线，左边是下分位数($Q1$)，右边是上四分位数($Q3$)，中间是中位数($Median$)，上下四分位数之差是四分位距$IQR（Interquartile Range$，用$Q1-1.5*IQR$得到下边缘（最小值），$Q3+1.5*IQR$得到上边缘（最大值）。在上边缘之外的数据就是极大异常值，在下边缘之外的数据就是极小异常值。
+&emsp;&emsp;这里可以将箱型图中的超过上下限的那些值作为异常值删除。如下图所示，箱型图中间是一个箱体，也就是粉红色部分，箱体左边，中间，右边分别有一条线，左边是下分位数(Q1)，右边是上四分位数(Q3)，中间是中位数(Median)，上下四分位数之差是四分位距IQR（Interquartile Range，用Q1-1.5*IQR得到下边缘（最小值），Q3+1.5*IQR得到上边缘（最大值）。在上边缘之外的数据就是极大异常值，在下边缘之外的数据就是极小异常值。
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200402004441943.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0V4Y2FsaWJ1clVsaW1pdGVk,size_16,color_FFFFFF,t_70#pic_center)
 
 搞清楚原理那我们就构造一个实现上述功能的函数吧！
@@ -3766,7 +3784,7 @@ data.to_csv('data_for_tree.csv', index=0)
 ## 4️⃣ LR与NN模型的特征构造
 &emsp;&emsp;上面的步骤就是一次比较完备的特征构造，我们还可以为其他模型构造特征，主要是由于不用模型需要的数据输入是不同的。
 
-### 4️⃣.1️⃣ $log$与归一化
+### 4️⃣.1️⃣ log与归一化
 观察一下数据分布
 
 
@@ -3884,13 +3902,13 @@ for i in data.columns[-10:]:
         data[i] = max_min(data[i])
 ```
 
-### 4️⃣.2️⃣ $OneEncoder$编码
-&emsp;&emsp;对类别特征进行$OneEncoder$<br>
-在此之前先介绍一下$OneEncoder$编码:$one-hot$的基本思想，将离散型特征的每一种取值都看成一种状态，若你的这一特征中有$N$个不相同的取值，那么我们就可以将该特征抽象成$N$种不同的状态，$one-hot$编码保证了每一个取值只会使得一种状态处于“激活态”，也就是说这N种状态中只有一个状态位值为1，其他状态位都是0。举个例子，假设我们以学历为例，我们想要研究的类别为小学、中学、大学、硕士、博士五种类别，我们使用$one-hot$对其编码就会得到：
+### 4️⃣.2️⃣ OneEncoder编码
+&emsp;&emsp;对类别特征进行OneEncoder<br>
+在此之前先介绍一下OneEncoder编码:one-hot的基本思想，将离散型特征的每一种取值都看成一种状态，若你的这一特征中有N个不相同的取值，那么我们就可以将该特征抽象成N种不同的状态，one-hot编码保证了每一个取值只会使得一种状态处于“激活态”，也就是说这N种状态中只有一个状态位值为1，其他状态位都是0。举个例子，假设我们以学历为例，我们想要研究的类别为小学、中学、大学、硕士、博士五种类别，我们使用one-hot对其编码就会得到：
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200402004945672.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0V4Y2FsaWJ1clVsaW1pdGVk,size_16,color_FFFFFF,t_70#pic_center)
 
-- $dummy \quad encoding$
+- dummy encoding
 
 哑变量编码直观的解释就是任意的将一个状态位去除。还是拿上面的例子来说，我们用4个状态位就足够反应上述5个类别的信息，也就是我们仅仅使用前四个状态位 [0,0,0,0] 就可以表达博士了。只是因为对于一个我们研究的样本，他已不是小学生、也不是中学生、也不是大学生、又不是研究生，那么我们就可以默认他是博士，是不是。所以，我们用哑变量编码可以将上述5类表示成：
 
