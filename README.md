@@ -41,7 +41,7 @@
       - [2️⃣.5️⃣.1️⃣ `numric`特征的相关性分析](https://github.com/ExcaliburEX/Tianchi-Story#2%EF%B8%8F%E2%83%A35%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-numric%E7%89%B9%E5%BE%81%E7%9A%84%E7%9B%B8%E5%85%B3%E6%80%A7%E5%88%86%E6%9E%90)
       - [2️⃣.5️⃣.2️⃣ `pandas_profiling`生成数据报告📕](https://github.com/ExcaliburEX/Tianchi-Story#2%EF%B8%8F%E2%83%A35%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-pandas_profiling%E7%94%9F%E6%88%90%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%91%8A)
     - [2️⃣.6️⃣ 结语✏️](https://github.com/ExcaliburEX/Tianchi-Story#3%EF%B8%8F%E2%83%A3-%E7%BB%93%E8%AF%AD%EF%B8%8F)
-  - [特征工程🃏](https://github.com/ExcaliburEX/Tianchi-Story#%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B)
+  - [3️⃣&emsp; 特征工程🃏](https://github.com/ExcaliburEX/Tianchi-Story#%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B)
     - [3️⃣.1️⃣&emsp; 前言](https://github.com/ExcaliburEX/Tianchi-Story#0%EF%B8%8F%E2%83%A3-%E5%89%8D%E8%A8%80)
       - [3️⃣.1️⃣.1️⃣&emsp; 赛题重述](https://github.com/ExcaliburEX/Tianchi-Story#0%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-%E8%B5%9B%E9%A2%98%E9%87%8D%E8%BF%B0)
       - [3️⃣.1️⃣.2️⃣&emsp; 数据集概述](https://github.com/ExcaliburEX/Tianchi-Story#0%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-%E6%95%B0%E6%8D%AE%E9%9B%86%E6%A6%82%E8%BF%B0)
@@ -1732,11 +1732,11 @@ pfr.to_file("pandas_analysis.html")
 
 
 
-# 特征工程🃏
+# 3️⃣&emsp; 特征工程🃏
 
 &emsp;&emsp;特征工程，是指用一系列工程化的方式从原始数据中筛选出更好的数据特征，以提升模型的训练效果。业内有一句广为流传的话是：数据和特征决定了机器学习的上限，而模型和算法是在逼近这个上限而已。由此可见，好的数据和特征是模型和算法发挥更大的作用的前提。特征工程通常包括数据预处理、特征选择、降维等环节。如下图所示：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200402004507865.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0V4Y2FsaWJ1clVsaW1pdGVk,size_16,color_FFFFFF,t_70#pic_center)
-## 0️⃣ 前言
+## 3️⃣.1️⃣&emsp; 前言
 
 &emsp;&emsp;我们经常在处理数据时，会面临以下问题：
 - 收集的数据格式不对（如 `SQL` 数据库、`JSON`、`CSV` 等）
@@ -1756,12 +1756,12 @@ pfr.to_file("pandas_analysis.html")
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200402005242590.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0V4Y2FsaWJ1clVsaW1pdGVk,size_16,color_FFFFFF,t_70#pic_center)
 
-### 0️⃣.1️⃣ 赛题重述
+### 3️⃣.1️⃣.1️⃣&emsp; 赛题重述
     
 &emsp;&emsp;这是一道来自于天池的新手练习题目，用`数据分析`、`机器学习`等手段进行 [二手车售卖价格预测](https://tianchi.aliyun.com/competition/entrance/231784/information) 的回归问题。赛题本身的思路清晰明了，即对给定的数据集进行分析探讨，然后设计模型运用数据进行训练，测试模型，最终给出选手的预测结果。前面我们已经进行过EDA分析在这里[天池_二手车价格预测_Task1-2_赛题理解与数据分析
 ](https://blog.csdn.net/ExcaliburUlimited/article/details/105021630)
 
-### 0️⃣.2️⃣ 数据集概述
+### 3️⃣.1️⃣.2️⃣&emsp; 数据集概述
 &emsp;&emsp;赛题官方给出了来自Ebay Kleinanzeigen的二手车交易记录，总数据量超过**40w**，包含**31列**变量信息，其中**15列**为匿名变量，即`v0`至`v15`。并从中抽取**15万条**作为训练集，**5万**条作为测试集A，**5万**条作为测试集B，同时对`name`、`model`、`brand`和`regionCode`等信息进行脱敏。具体的数据表如下图：
 
 <div class="table-wrapper" style = "center"><table style = "center">
@@ -1844,8 +1844,8 @@ pfr.to_file("pandas_analysis.html")
 </table>
 </div>
 
-## 1️⃣ 异常缺失值删除
-### 1️⃣.1️⃣  导入库与数据
+## 3️⃣.2️⃣&emsp; 异常缺失值删除
+### 3️⃣.2️⃣.1️⃣&emsp; 导入库与数据
 
 
 ```python
@@ -2065,7 +2065,7 @@ train.columns
 
 
 
-### 1️⃣.2️⃣  异常值删除
+### 3️⃣.2️⃣.2️⃣&emsp; 异常值删除
 &emsp;&emsp;这里可以将箱型图中的超过上下限的那些值作为异常值删除。如下图所示，箱型图中间是一个箱体，也就是粉红色部分，箱体左边，中间，右边分别有一条线，左边是下分位数(Q1)，右边是上四分位数(Q3)，中间是中位数(Median)，上下四分位数之差是四分位距IQR（Interquartile Range，用Q1-1.5*IQR得到下边缘（最小值），Q3+1.5*IQR得到上边缘（最大值）。在上边缘之外的数据就是极大异常值，在下边缘之外的数据就是极小异常值。
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200402004441943.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0V4Y2FsaWJ1clVsaW1pdGVk,size_16,color_FFFFFF,t_70#pic_center)
 
@@ -2559,7 +2559,7 @@ train = Bach_drop_outliers(train)
 
 可以看出，经过箱型图异常值删除后，新数据的箱型图的数据几乎没有异常值了，甚至有些箱型图的数据是一条直线，当然那是因为数据本身就是种类非0即1。
 
-## 2️⃣ 树模型的特征构造
+## 3️⃣.3️⃣&emsp; 树模型的特征构造
 &emsp;&emsp;训练集和测试集放在一起，方便构造特征
 
 
@@ -2886,7 +2886,7 @@ data
 
 
 
-### 2️⃣.1️⃣ 时间特征构造
+### 3️⃣.3️⃣.1️⃣&emsp; 时间特征构造
 - 使用时间：`data['creatDate']` - `data['regDate']`，反应汽车使用时间，一般来说价格与使用时间成反比
 - 不过要注意，数据里有时间出错的格式，所以我们需要 errors='coerce'
 
@@ -2943,7 +2943,7 @@ data.isnull().sum().sum()
 
 
 
-### 2️⃣.2️⃣ 城市信息特征提取
+### 3️⃣.3️⃣.2️⃣&emsp; 城市信息特征提取
 - 从邮编中提取城市信息，因为是德国的数据，所以参考德国的邮编，相当于加入了先验知识
 
 
@@ -2970,7 +2970,7 @@ data['city']
 
 
 
-### 2️⃣.3️⃣ 品牌特征提取
+### 3️⃣.3️⃣.3️⃣&emsp; 品牌特征提取
 &emsp;&emsp;计算某品牌的销售统计量，这里要以 train 的数据计算统计量。
 
 
@@ -3638,7 +3638,7 @@ brand_fe
 
 
 
-## 3️⃣ 树模型的数据分桶
+## 3️⃣.4️⃣&emsp; 树模型的数据分桶
 &emsp;&emsp;数据分箱（也称为离散分箱或分段）是一种数据预处理技术，用于减少次要观察误差的影响，是一种将多个连续值分组为较少数量的“分箱”的方法。例如我们有各个年龄的数据的统计值，可以分成某个段的年龄的值。
 1. 离散后稀疏向量内积乘法运算速度更快，计算结果也方便存储，容易扩展；
 2. 离散后的特征对异常值更具鲁棒性，如 age>30 为 1 否则为 0，对于年龄为 200 的也不会对模型造成很大的干扰；
@@ -3781,10 +3781,10 @@ data.columns
 data.to_csv('data_for_tree.csv', index=0)
 ```
 
-## 4️⃣ LR与NN模型的特征构造
+## 3️⃣.5️⃣&emsp; LR与NN模型的特征构造
 &emsp;&emsp;上面的步骤就是一次比较完备的特征构造，我们还可以为其他模型构造特征，主要是由于不用模型需要的数据输入是不同的。
 
-### 4️⃣.1️⃣ log与归一化
+### 3️⃣.5️⃣.1️⃣&emsp; log与归一化
 观察一下数据分布
 
 
@@ -3902,7 +3902,7 @@ for i in data.columns[-10:]:
         data[i] = max_min(data[i])
 ```
 
-### 4️⃣.2️⃣ OneEncoder编码
+### 3️⃣.5️⃣.2️⃣&emsp; OneEncoder编码
 &emsp;&emsp;对类别特征进行OneEncoder<br>
 在此之前先介绍一下OneEncoder编码:one-hot的基本思想，将离散型特征的每一种取值都看成一种状态，若你的这一特征中有N个不相同的取值，那么我们就可以将该特征抽象成N种不同的状态，one-hot编码保证了每一个取值只会使得一种状态处于“激活态”，也就是说这N种状态中只有一个状态位值为1，其他状态位都是0。举个例子，假设我们以学历为例，我们想要研究的类别为小学、中学、大学、硕士、博士五种类别，我们使用one-hot对其编码就会得到：
 
@@ -4245,8 +4245,8 @@ data
 data.to_csv('data_for_lr.csv', index=0)
 ```
 
-## 5️⃣ 特征选择
-### 5️⃣.1️⃣ 过滤式(filter)
+## 3️⃣.6️⃣&emsp; 特征选择
+### 3️⃣.6️⃣.1️⃣&emsp; 过滤式(filter)
 相关性分析
 
 
@@ -4293,7 +4293,7 @@ sns.heatmap(correlation, square = True, cmap = 'PuBuGn', vmax=0.8)
 
 看不出来啥。😛
 
-### 5️⃣.2️⃣ 包裹式(wrapper)
+### 3️⃣.6️⃣.2️⃣&emsp; 包裹式(wrapper)
 
 
 ```python
@@ -4672,7 +4672,7 @@ plt.show()
 ```
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200402005051474.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0V4Y2FsaWJ1clVsaW1pdGVk,size_16,color_FFFFFF,t_70#pic_center)
-### 5️⃣.3️⃣ 嵌入式（embedding）
+### 3️⃣.6️⃣.3️⃣&emsp; 嵌入式（embedding）
 Lasso 回归和决策树可以完成嵌入式特征选择，大部分情况下都是用嵌入式做特征筛选。
 
 下一步就是建模了。🤔
