@@ -54,7 +54,7 @@
       - [3️⃣.3️⃣.3️⃣&emsp; 品牌特征提取](https://github.com/ExcaliburEX/Tianchi-Story#3%EF%B8%8F%E2%83%A33%EF%B8%8F%E2%83%A33%EF%B8%8F%E2%83%A3-%E5%93%81%E7%89%8C%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96)
     - [3️⃣.4️⃣&emsp; 树模型的数据分桶](https://github.com/ExcaliburEX/Tianchi-Story#3%EF%B8%8F%E2%83%A34%EF%B8%8F%E2%83%A3-%E6%A0%91%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%95%B0%E6%8D%AE%E5%88%86%E6%A1%B6)
     - [3️⃣.5️⃣&emsp; LR与NN模型的特征构造](https://github.com/ExcaliburEX/Tianchi-Story#3%EF%B8%8F%E2%83%A35%EF%B8%8F%E2%83%A3-lr%E4%B8%8Enn%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%89%B9%E5%BE%81%E6%9E%84%E9%80%A0)
-      - [3️⃣.5️⃣.1️⃣&emsp; log与归一化](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-log%E4%B8%8E%E5%BD%92%E4%B8%80%E5%8C%96)
+      - [3️⃣.5️⃣.1️⃣&emsp; log与归一化](https://github.com/ExcaliburEX/Tianchi-Story#3%EF%B8%8F%E2%83%A35%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-log%E4%B8%8E%E5%BD%92%E4%B8%80%E5%8C%96)
       - [3️⃣.5️⃣.2️⃣&emsp; OneEncoder编码](https://github.com/ExcaliburEX/Tianchi-Story#3%EF%B8%8F%E2%83%A35%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-oneencoder%E7%BC%96%E7%A0%81)
     - [3️⃣.6️⃣&emsp; 特征选择](https://github.com/ExcaliburEX/Tianchi-Story#3%EF%B8%8F%E2%83%A36%EF%B8%8F%E2%83%A3-%E7%89%B9%E5%BE%81%E9%80%89%E6%8B%A9)
       - [3️⃣.6️⃣.1️⃣&emsp; 过滤式(filter)](https://github.com/ExcaliburEX/Tianchi-Story#3%EF%B8%8F%E2%83%A36%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-%E8%BF%87%E6%BB%A4%E5%BC%8Ffilter)
