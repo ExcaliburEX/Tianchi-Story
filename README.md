@@ -26,7 +26,7 @@
 # 全文大导航
 
 - [二手车成交价格预测](https://github.com/ExcaliburEX/Tianchi-Story#二手车成交价格预测)
-  - [1️⃣ 赛题理解✍️](https://github.com/ExcaliburEX/Tianchi-Story#1%EF%B8%8F%E2%83%A3-%E8%B5%9B%E9%A2%98%E7%90%86%E8%A7%A3%EF%B8%8F)
+  - [1️⃣ 赛题理解✍️](https://github.com/ExcaliburEX/Tianchi-Story#1%EF%B8%8F%E2%83%A3-%E8%B5%9B%E9%A2%98%E7%90%86%E8%A7%A3%EF%B8%8F)[天池_二手车价格预测_Task_1-2.ipynb](https://github.com/ExcaliburEX/Tianchi-Story/blob/master/天池_二手车价格预测_Task_1-2.ipynb)
     - [1️⃣.1️⃣ 赛题重述](https://github.com/ExcaliburEX/Tianchi-Story#1%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-%E8%B5%9B%E9%A2%98%E9%87%8D%E8%BF%B0)
     - [1️⃣.2️⃣ 数据集概述](https://github.com/ExcaliburEX/Tianchi-Story#1%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-%E6%95%B0%E6%8D%AE%E9%9B%86%E6%A6%82%E8%BF%B0)
     - [1️⃣.3️⃣ 预测结果评价指标⚒️](https://github.com/ExcaliburEX/Tianchi-Story#1%EF%B8%8F%E2%83%A33%EF%B8%8F%E2%83%A3-%E9%A2%84%E6%B5%8B%E7%BB%93%E6%9E%9C%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87%EF%B8%8F)
@@ -41,7 +41,7 @@
       - [2️⃣.5️⃣.1️⃣ `numric`特征的相关性分析](https://github.com/ExcaliburEX/Tianchi-Story#2%EF%B8%8F%E2%83%A35%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-numric%E7%89%B9%E5%BE%81%E7%9A%84%E7%9B%B8%E5%85%B3%E6%80%A7%E5%88%86%E6%9E%90)
       - [2️⃣.5️⃣.2️⃣ `pandas_profiling`生成数据报告📕](https://github.com/ExcaliburEX/Tianchi-Story#2%EF%B8%8F%E2%83%A35%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-pandas_profiling%E7%94%9F%E6%88%90%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%91%8A)
     - [2️⃣.6️⃣ 结语✏️](https://github.com/ExcaliburEX/Tianchi-Story#3%EF%B8%8F%E2%83%A3-%E7%BB%93%E8%AF%AD%EF%B8%8F)
-  - [3️⃣&emsp; 特征工程🃏](https://github.com/ExcaliburEX/Tianchi-Story#3%EF%B8%8F%E2%83%A3-%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B)
+  - [3️⃣&emsp; 特征工程🃏](https://github.com/ExcaliburEX/Tianchi-Story#3%EF%B8%8F%E2%83%A3-%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B)[天池_二手车价格预测_Task_3_特征工程.ipynb](https://github.com/ExcaliburEX/Tianchi-Story/blob/master/天池_二手车价格预测_Task_3_特征工程.ipynb)
     - [3️⃣.1️⃣&emsp; 前言](https://github.com/ExcaliburEX/Tianchi-Story#3%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-%E5%89%8D%E8%A8%80)
       - [3️⃣.1️⃣.1️⃣&emsp; 赛题重述](https://github.com/ExcaliburEX/Tianchi-Story#3%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-%E8%B5%9B%E9%A2%98%E9%87%8D%E8%BF%B0)
       - [3️⃣.1️⃣.2️⃣&emsp; 数据集概述](https://github.com/ExcaliburEX/Tianchi-Story#3%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-%E6%95%B0%E6%8D%AE%E9%9B%86%E6%A6%82%E8%BF%B0)
