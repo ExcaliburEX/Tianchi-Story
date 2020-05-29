@@ -60,8 +60,28 @@
       - [3️⃣.6️⃣.1️⃣&emsp; 过滤式(filter)](https://github.com/ExcaliburEX/Tianchi-Story#3%EF%B8%8F%E2%83%A36%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-%E8%BF%87%E6%BB%A4%E5%BC%8Ffilter)
       - [3️⃣.6️⃣.2️⃣&emsp; 包裹式(wrapper)](https://github.com/ExcaliburEX/Tianchi-Story#3%EF%B8%8F%E2%83%A36%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-%E5%8C%85%E8%A3%B9%E5%BC%8Fwrapper)
       - [3️⃣.6️⃣.3️⃣&emsp; 嵌入式(embedding)](https://github.com/ExcaliburEX/Tianchi-Story#3%EF%B8%8F%E2%83%A36%EF%B8%8F%E2%83%A33%EF%B8%8F%E2%83%A3-%E5%B5%8C%E5%85%A5%E5%BC%8Fembedding)
-  - 建模与调参
-    - 4️⃣ 
+  - [4️⃣建模与调参](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A3-%E5%BB%BA%E6%A8%A1%E4%B8%8E%E8%B0%83%E5%8F%82)
+    - [4️⃣.1️⃣ 前言](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-%E5%89%8D%E8%A8%80)
+      - [4️⃣.1️⃣.1️⃣ 赛题重述](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-%E8%B5%9B%E9%A2%98%E9%87%8D%E8%BF%B0)
+      - [4️⃣.1️⃣.2️⃣ 数据集概述](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-%E6%95%B0%E6%8D%AE%E9%9B%86%E6%A6%82%E8%BF%B0)
+    - [4️⃣.2️⃣ 数据处理](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86)
+    - [4️⃣.3️⃣ 线性回归](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A33%EF%B8%8F%E2%83%A3-%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92)
+      - [4️⃣.3️⃣.1️⃣ 简单建模](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A33%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-%E7%AE%80%E5%8D%95%E5%BB%BA%E6%A8%A1)
+      - [4️⃣.3️⃣.2️⃣ 处理长尾分布](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A33%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-%E5%A4%84%E7%90%86%E9%95%BF%E5%B0%BE%E5%88%86%E5%B8%83)
+    - [4️⃣.4️⃣ 五折交叉验证¶（cross_val_score）](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A34%EF%B8%8F%E2%83%A3-%E4%BA%94%E6%8A%98%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81cross_val_score)
+      - [4️⃣.4️⃣.1️⃣ cross_val_score相应函数的应用](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A34%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-cross_val_score%E7%9B%B8%E5%BA%94%E5%87%BD%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8)
+      - [4️⃣.4️⃣.2️⃣ 考虑真实世界限制](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A34%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-%E8%80%83%E8%99%91%E7%9C%9F%E5%AE%9E%E4%B8%96%E7%95%8C%E9%99%90%E5%88%B6)
+      - [4️⃣.4️⃣.3️⃣ 绘制学习率曲线与验证曲线¶](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A34%EF%B8%8F%E2%83%A33%EF%B8%8F%E2%83%A3-%E7%BB%98%E5%88%B6%E5%AD%A6%E4%B9%A0%E7%8E%87%E6%9B%B2%E7%BA%BF%E4%B8%8E%E9%AA%8C%E8%AF%81%E6%9B%B2%E7%BA%BF)
+    - [4️⃣.5️⃣ 多种模型对比](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A35%EF%B8%8F%E2%83%A3-%E5%A4%9A%E7%A7%8D%E6%A8%A1%E5%9E%8B%E5%AF%B9%E6%AF%94)
+      - [4️⃣.5️⃣.1️⃣ 线性模型 & 嵌入式特征选择](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A35%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B--%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%89%B9%E5%BE%81%E9%80%89%E6%8B%A9)
+        - [4️⃣.5️⃣.1️⃣.1️⃣ LinearRegression，Ridge，Lasso方法的运行](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A35%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-linearregressionridgelasso%E6%96%B9%E6%B3%95%E7%9A%84%E8%BF%90%E8%A1%8C)
+        - [4️⃣.5️⃣.1️⃣.2️⃣ 三种方法的对比](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A35%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-%E4%B8%89%E7%A7%8D%E6%96%B9%E6%B3%95%E7%9A%84%E5%AF%B9%E6%AF%94)
+      - [4️⃣.5️⃣.2️⃣ 非线性模型](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A35%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B)
+      - [4️⃣.5️⃣.3️⃣ 模型调参](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A35%EF%B8%8F%E2%83%A33%EF%B8%8F%E2%83%A3-%E6%A8%A1%E5%9E%8B%E8%B0%83%E5%8F%82)
+        - [4️⃣.5️⃣.3️⃣.1️⃣ 贪心调参](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A35%EF%B8%8F%E2%83%A33%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3-%E8%B4%AA%E5%BF%83%E8%B0%83%E5%8F%82)
+        - [4️⃣.5️⃣.3️⃣.2️⃣ Grid Search 网格调参](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A35%EF%B8%8F%E2%83%A33%EF%B8%8F%E2%83%A32%EF%B8%8F%E2%83%A3-grid-search-%E7%BD%91%E6%A0%BC%E8%B0%83%E5%8F%82)
+        - [4️⃣.5️⃣.3️⃣.3️⃣ 贝叶斯调参](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A35%EF%B8%8F%E2%83%A33%EF%B8%8F%E2%83%A33%EF%B8%8F%E2%83%A3-%E8%B4%9D%E5%8F%B6%E6%96%AF%E8%B0%83%E5%8F%82)
+    - [4️⃣.6️⃣ 总结](https://github.com/ExcaliburEX/Tianchi-Story#4%EF%B8%8F%E2%83%A36%EF%B8%8F%E2%83%A3-%E6%80%BB%E7%BB%93)
   - 模型结果融合
 
 
